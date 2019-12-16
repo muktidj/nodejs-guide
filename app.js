@@ -6,10 +6,10 @@ const server = http.createServer(app);
 
 app.use((req, res, next) => {
   console.log("Run 1");
-  next();
+  next(); // Mengizinkan permintaan selanjutnya
 });
 app.use((req, res, next) => {
-  console.log("Run 2");
+  res.send("<h1>Hello World, From Express</h1>");
 });
 
 server.listen(8000);
