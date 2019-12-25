@@ -11,7 +11,8 @@ const router = express.Router();
 router.get('/', (req, res, next) => {
   // console.log('shop.js', adminRoutes.products)
   // res.sendFile(path.join(rootDir, 'views', 'shop.html'));
-  res.render('shop')
+  const products = adminRoutes.products
+  res.render('shop', {prods: products, title: 'Mukti Shop'})
 });
 
 module.exports = router;
