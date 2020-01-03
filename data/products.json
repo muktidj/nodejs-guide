@@ -1,6 +1,1 @@
-[
-  { "title": "First-Book" },
-  { "title": "Book-Second" },
-  { "title": "Laptop" },
-  { "title": "Mouse" }
-]
+[{"title":"First-Book"},{"title":"Second-Book"},{"title":"Mouse"}]
