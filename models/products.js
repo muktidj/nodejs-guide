@@ -32,9 +32,9 @@ module.exports = class Product {
     );
     fs.readFile(callPath, (err, fileContent) => {
       if (err) {
-        return [];
+       callBack([]);
       }
-      return JSON.parse(fileContent);
+      callBack(JSON.parse(fileContent));
     });
   }
 };
